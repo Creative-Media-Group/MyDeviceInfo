@@ -7,6 +7,7 @@ export default function Index() {
     <View
       style={{
         flex: 1,
+        gap: 10,
         justifyContent: "center",
         alignItems: "center",
       }}

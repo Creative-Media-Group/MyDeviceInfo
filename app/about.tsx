@@ -2,6 +2,7 @@ import isDarkMode from "@/components/CheckDarkMode";
 import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+
 export default function Index() {
     const insets = useSafeAreaInsets()
     const styles = StyleSheet.create({
@@ -27,19 +28,30 @@ export default function Index() {
             }>
                 My repository:
             </Text>
-            <Link href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"} style={{ color: "blue" }}>GitHub</Link>
+            <Link
+                href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+                style={{ color: "blue" }}>
+                GitHub
+            </Link>
             <Text style={
                 { color: isDarkMode() ? "white" : "black" }
             }>
                 My repository:
             </Text>
-            <Link href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"} style={{ color: "blue" }}>GitHub</Link>
+            <Link
+                href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+                style={{ color: "blue" }}>
+                GitHub
+            </Link>
             <Text style={
                 { color: isDarkMode() ? "white" : "black" }
             }>
                 My repository:
             </Text>
-            <Link href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"} style={{ color: "blue" }}>GitHub</Link>
+            <Link href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+                style={{ color: "blue" }}>
+                GitHub
+            </Link>
         </View>
     )
 }
