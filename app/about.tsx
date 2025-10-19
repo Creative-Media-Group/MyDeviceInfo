@@ -3,27 +3,13 @@ import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
-    const styles = StyleSheet.create({
-        safeareaview: { flex: 1 },
-        view: {
-            alignContent: "space-around",
-            justifyContent: "center",
-            gap: 10,
-            width: "100%",
-            height: "100%",
-            alignItems: "center"
-        }
-    })
+
     return (
         <View style={styles.view}>
-            <Text style={
-                { color: isDarkMode() ? "white" : "black" }
-            }>
+            <Text>
                 My repository:
             </Text>
-            <Text style={
-                { color: isDarkMode() ? "white" : "black" }
-            }>
+            <Text>
                 My repository:
             </Text>
             <Link
@@ -31,9 +17,7 @@ export default function Index() {
                 style={{ color: "blue" }}>
                 GitHub
             </Link>
-            <Text style={
-                { color: isDarkMode() ? "white" : "black" }
-            }>
+            <Text>
                 My repository:
             </Text>
             <Link
@@ -53,3 +37,15 @@ export default function Index() {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    safeareaview: { flex: 1 },
+    view: {
+        alignContent: "space-around",
+        justifyContent: "center",
+        gap: 10,
+        width: "100%",
+        height: "100%",
+        alignItems: "center"
+    }
+})
