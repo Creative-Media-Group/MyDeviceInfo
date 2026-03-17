@@ -1,8 +1,11 @@
+import useIsDarkMode from '@/components/CheckDarkMode';
 import mystyles from '@/styles/mystyles';
 import * as Device from 'expo-device';
 import { Text, View } from "react-native";
 
 export default function Index() {
+  const IsDarkMode = useIsDarkMode();
+  const styles = mystyles(IsDarkMode);
   return (
     <View
       style={styles.homeview}
@@ -20,4 +23,3 @@ export default function Index() {
     </View>
   );
 }
-const styles = mystyles()

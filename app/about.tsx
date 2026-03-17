@@ -1,9 +1,11 @@
+import useIsDarkMode from "@/components/CheckDarkMode";
 import mystyles from "@/styles/mystyles";
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Index() {
-
+    const IsDarkMode = useIsDarkMode();
+    const styles = mystyles(IsDarkMode);
     return (
         <View style={styles.view}>
             <Text style={
@@ -17,7 +19,7 @@ export default function Index() {
                 My repository:
             </Text>
             <Link
-                href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+                href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
                 style={styles.link}>
                 GitHub
             </Link>
@@ -27,7 +29,7 @@ export default function Index() {
                 My repository:
             </Text>
             <Link
-                href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+                href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
                 style={styles.link}>
                 GitHub
             </Link>
@@ -36,7 +38,7 @@ export default function Index() {
             }>
                 My repository:
             </Text>
-            <Link href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+            <Link href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
                 style={styles.link}>
                 GitHub
             </Link>
@@ -44,4 +46,3 @@ export default function Index() {
     )
 }
 
-const styles = mystyles()

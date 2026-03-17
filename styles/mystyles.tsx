@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
-export default function mystyles() {
+export default function mystyles(IsDarkMode: boolean) {
+    console.log("Darkmode:", IsDarkMode)
     return StyleSheet.create({
         safeareaview: {
             flex: 1,
@@ -12,7 +13,7 @@ export default function mystyles() {
             width: "100%",
             height: "100%",
             alignItems: "center",
-            //backgroundColor: IsDarkMode() ? "white" : "black"
+            backgroundColor: IsDarkMode ? "black" : "white"
         },
         homeview: {
             flex: 1,
@@ -24,7 +25,7 @@ export default function mystyles() {
             color: "blue"
         },
         text: {
-            //color: IsDarkMode() ? "white" : "black"
+            color: IsDarkMode ? "white" : "black"
         }
     })
 }
