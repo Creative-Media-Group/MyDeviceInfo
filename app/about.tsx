@@ -1,51 +1,47 @@
-import isDarkMode from "@/components/CheckDarkMode";
+import mystyles from "@/styles/mystyles";
 import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Index() {
 
     return (
         <View style={styles.view}>
-            <Text>
+            <Text style={
+                styles.text
+            }>
                 My repository:
             </Text>
-            <Text>
-                My repository:
-            </Text>
-            <Link
-                href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
-                style={{ color: "blue" }}>
-                GitHub
-            </Link>
-            <Text>
+            <Text style={
+                styles.text
+            }>
                 My repository:
             </Text>
             <Link
                 href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
-                style={{ color: "blue" }}>
+                style={styles.link}>
                 GitHub
             </Link>
             <Text style={
-                { color: isDarkMode() ? "white" : "black" }
+                styles.text
+            }>
+                My repository:
+            </Text>
+            <Link
+                href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
+                style={styles.link}>
+                GitHub
+            </Link>
+            <Text style={
+                styles.text
             }>
                 My repository:
             </Text>
             <Link href={"https://github.com/Creative-Media-Group/SimpleThanksReactNative"}
-                style={{ color: "blue" }}>
+                style={styles.link}>
                 GitHub
             </Link>
         </View>
     )
 }
 
-const styles = StyleSheet.create({
-    safeareaview: { flex: 1 },
-    view: {
-        alignContent: "space-around",
-        justifyContent: "center",
-        gap: 10,
-        width: "100%",
-        height: "100%",
-        alignItems: "center"
-    }
-})
+const styles = mystyles()

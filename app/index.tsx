@@ -1,15 +1,11 @@
+import mystyles from '@/styles/mystyles';
 import * as Device from 'expo-device';
 import { Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View
-      style={{
-        flex: 1,
-        gap: 10,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      style={styles.homeview}
     >
       <Text>Manufacturer: {Device.manufacturer}</Text>
       <Text>Modelname: {Device.modelName}</Text>
@@ -24,3 +20,4 @@ export default function Index() {
     </View>
   );
 }
+const styles = mystyles()
