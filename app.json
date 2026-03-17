@@ -7,7 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "mydeviceinfo",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "de.cmg.MyDeviceInfo",
@@ -20,7 +19,6 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
       "package": "de.cmg.MyDeviceInfo"
     },
     "web": {
@@ -41,7 +39,8 @@
       ],
       "expo-web-browser",
       "expo-localization",
-      "expo-font"
+      "expo-font",
+      "expo-image"
     ],
     "experiments": {
       "typedRoutes": true
