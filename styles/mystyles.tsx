@@ -20,6 +20,7 @@ export default function mystyles(IsDarkMode: boolean) {
             gap: 10,
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor: IsDarkMode ? "black" : "white"
         },
         link: {
             color: "blue"

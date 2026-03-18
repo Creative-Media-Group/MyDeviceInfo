@@ -10,16 +10,16 @@ export default function Index() {
     <View
       style={styles.homeview}
     >
-      <Text>Manufacturer: {Device.manufacturer}</Text>
-      <Text>Modelname: {Device.modelName}</Text>
-      <Text>Brand: {Device.brand}</Text>
-      <Text>OS Name: {Device.osName}</Text>
-      <Text>OS Version: {Device.osVersion}</Text>
-      <Text>Platform API level: {Device.platformApiLevel}</Text>
-      <Text>Productname: {Device.productName}</Text>
-      <Text>Devicename: {Device.deviceType}</Text>
-      <Text>Supported CPU architectures: {Device.supportedCpuArchitectures}</Text>
-      <Text>Total memory: {Device.totalMemory}</Text>
+      <Text style={styles.text}>Manufacturer: {Device.manufacturer}</Text>
+      <Text style={styles.text}>Modelname: {Device.modelName}</Text>
+      <Text style={styles.text}>Brand: {Device.brand}</Text>
+      <Text style={styles.text}>OS Name: {Device.osName}</Text>
+      <Text style={styles.text}>OS Version: {Device.osVersion}</Text>
+      <Text style={styles.text}>Platform API level: {Device.platformApiLevel}</Text>
+      <Text style={styles.text}>Productname: {Device.productName}</Text>
+      <Text style={styles.text}>Devicename: {Device.deviceType}</Text>
+      <Text style={styles.text}>Supported CPU architectures: {Device.supportedCpuArchitectures}</Text>
+      <Text style={styles.text}>Total memory: {Device.totalMemory}</Text>
     </View>
   );
 }
