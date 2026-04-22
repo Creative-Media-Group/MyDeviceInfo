@@ -1,7 +1,6 @@
 import useIsDarkMode from '@/components/CheckDarkMode';
 import mystyles from '@/styles/mystyles';
 import * as Device from 'expo-device';
-import { Link } from 'expo-router';
 import { Text } from "react-native";
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -22,12 +21,12 @@ export default function Index() {
       <Text style={styles.text}>Devicename: {Device.deviceType}</Text>
       <Text style={styles.text}>Supported CPU architectures: {Device.supportedCpuArchitectures}</Text>
       <Text style={styles.text}>Total memory: {Device.totalMemory}</Text>
-      <Link
+      {/* <Link
         style={{ color: "blue" }}
         href="/details"
       >
         <Text>Details</Text>
-      </Link>
+      </Link> */}
     </SafeAreaView>
   );
 }
