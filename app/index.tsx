@@ -27,7 +27,7 @@ export default function Index() {
         href="/details"
       >
         <Text>Details</Text>
-      </Link>;
+      </Link>
     </SafeAreaView>
   );
 }
