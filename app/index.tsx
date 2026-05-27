@@ -1,12 +1,12 @@
 import useIsDarkMode from '../components/CheckDarkMode';
-import mystyles from '../styles/mystyles';
 import * as Device from 'expo-device';
 import { Text } from "react-native";
 import { SafeAreaView } from 'react-native-safe-area-context';
+import useStyles from '../styles/mystyles';
 
 export default function Index() {
   const IsDarkMode = useIsDarkMode();
-  const styles = mystyles(IsDarkMode);
+  const styles = useStyles();
   return (
     <SafeAreaView
       style={styles.homeview}
