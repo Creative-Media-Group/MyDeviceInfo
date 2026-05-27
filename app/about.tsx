@@ -1,11 +1,9 @@
-import useIsDarkMode from "../components/CheckDarkMode";
-import mystyles from "../styles/mystyles";
+import useStyles from "../styles/mystyles";
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 
 export default function Index() {
-    const IsDarkMode = useIsDarkMode();
-    const styles = mystyles(IsDarkMode);
+    const styles = useStyles();
     return (
         <View style={styles.view}>
             <Text style={
