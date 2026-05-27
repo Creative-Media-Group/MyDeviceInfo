@@ -1,6 +1,6 @@
 import { i18n } from "../utils/mylocalisation";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import { DarkTheme, DefaultTheme, Icon, Label, ThemeProvider, VectorIcon } from "expo-router";
+import { DarkTheme, DefaultTheme, ThemeProvider, VectorIcon } from "expo-router";
 import { NativeTabs } from "expo-router/unstable-native-tabs";
 import { useColorScheme } from "react-native";
 
