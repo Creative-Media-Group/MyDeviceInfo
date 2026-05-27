@@ -1,7 +1,8 @@
+import { useTheme } from "expo-router";
 import { StyleSheet } from "react-native";
 
-export default function mystyles(IsDarkMode: boolean) {
-    console.log("Darkmode:", IsDarkMode)
+export default function useStyles() {
+    const theme = useTheme();
     return StyleSheet.create({
         safeareaview: {
             flex: 1,
@@ -13,20 +14,20 @@ export default function mystyles(IsDarkMode: boolean) {
             width: "100%",
             height: "100%",
             alignItems: "center",
-            backgroundColor: IsDarkMode ? "black" : "white"
+            // backgroundColor: IsDarkMode ? "black" : "white"
         },
         homeview: {
             flex: 1,
             gap: 10,
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: IsDarkMode ? "black" : "white"
+            // backgroundColor: IsDarkMode ? "black" : "white"
         },
         link: {
             color: "blue"
         },
         text: {
-            color: IsDarkMode ? "white" : "black"
+            color: theme.colors.text
         }
     })
 }
