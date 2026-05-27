@@ -1,5 +1,5 @@
-import useIsDarkMode from "@/components/CheckDarkMode";
-import mystyles from "@/styles/mystyles";
+import useIsDarkMode from "../components/CheckDarkMode";
+import mystyles from "../styles/mystyles";
 import { Link } from "expo-router";
 import { Text, View } from "react-native";
 

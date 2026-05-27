@@ -1,5 +1,5 @@
-import useIsDarkMode from '@/components/CheckDarkMode';
-import mystyles from '@/styles/mystyles';
+import useIsDarkMode from '../components/CheckDarkMode';
+import mystyles from '../styles/mystyles';
 import * as Device from 'expo-device';
 import { Text } from "react-native";
 import { SafeAreaView } from 'react-native-safe-area-context';
