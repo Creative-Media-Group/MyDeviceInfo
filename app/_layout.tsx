@@ -10,13 +10,29 @@ export default function RootLayout() {
   const colorSheme = useColorScheme();
   return (
     <ThemeProvider value={colorSheme === "dark" ? DarkTheme : DefaultTheme}>
-      <NativeTabs>
+      <NativeTabs iconColor={"red"} badgeBackgroundColor={"red"}>
         <NativeTabs.Trigger name="index">
-          <NativeTabs.Trigger.Icon src={<VectorIcon family={MaterialCommunityIcons} name="home" />} />
+          <NativeTabs.Trigger.Icon
+            sf={"house"} md={"home"}
+            src={
+              <VectorIcon
+                family={MaterialCommunityIcons}
+                name="home"
+              />
+            }
+          />
           <NativeTabs.Trigger.Label>{title}</NativeTabs.Trigger.Label>
         </NativeTabs.Trigger>
         <NativeTabs.Trigger name="about">
-          <NativeTabs.Trigger.Icon src={<VectorIcon family={MaterialCommunityIcons} name="information" />} />
+          <NativeTabs.Trigger.Icon
+            sf={"info"} md={"info"}
+            src={
+              <VectorIcon
+                family={MaterialCommunityIcons}
+                name="information"
+              />
+            }
+          />
           <NativeTabs.Trigger.Label>{about}</NativeTabs.Trigger.Label>
         </NativeTabs.Trigger>
       </NativeTabs>
