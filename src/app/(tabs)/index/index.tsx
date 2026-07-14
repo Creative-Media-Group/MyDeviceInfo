@@ -1,5 +1,5 @@
 import * as Device from 'expo-device';
-import { Stack, useRouter } from 'expo-router';
+import { Stack } from 'expo-router';
 import { Button, Host, List, ListItem, Text } from "@expo/ui"
 import { Alert } from 'react-native';
 import { i18n } from '../../../../utils/mylocalisation';
@@ -17,7 +17,6 @@ const DATA = [
   { name: "Total memory", value: Device.totalMemory }
 ]
 export default function Index() {
-  const router = useRouter();
   let title = i18n.t("title")
   return (
     <>

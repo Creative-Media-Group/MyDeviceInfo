@@ -1,6 +1,5 @@
 import { i18n } from "../../../utils/mylocalisation";
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import { DarkTheme, DefaultTheme, ThemeProvider, VectorIcon } from "expo-router";
+import { DarkTheme, DefaultTheme, ThemeProvider } from "expo-router";
 import { NativeTabs } from "expo-router/unstable-native-tabs";
 import { useColorScheme } from "react-native";
 
@@ -14,24 +13,12 @@ export default function RootLayout() {
         <NativeTabs.Trigger name="index">
           <NativeTabs.Trigger.Icon
             sf={"house"} md={"home"}
-            src={
-              <VectorIcon
-                family={MaterialCommunityIcons}
-                name="home"
-              />
-            }
           />
           <NativeTabs.Trigger.Label>{title}</NativeTabs.Trigger.Label>
         </NativeTabs.Trigger>
         <NativeTabs.Trigger name="about">
           <NativeTabs.Trigger.Icon
             sf={"info"} md={"info"}
-            src={
-              <VectorIcon
-                family={MaterialCommunityIcons}
-                name="information"
-              />
-            }
           />
           <NativeTabs.Trigger.Label>{about}</NativeTabs.Trigger.Label>
         </NativeTabs.Trigger>
