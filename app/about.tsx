@@ -1,47 +1,65 @@
-import { Host, List, Text } from "@expo/ui";
+import { Host, List, ListItem, Text } from "@expo/ui";
 import useStyles from "../styles/mystyles";
 import { Link, Stack } from "expo-router";
+import { i18n } from "../utils/mylocalisation";
 
 export default function Index() {
     const styles = useStyles();
     return (
-        <Host style={{ flex: 1 }}>
-            <List>
-                <Text textStyle={
-                    styles.text
-                }>
-                    My repository:
-                </Text>
-                <Text textStyle={
-                    styles.text
-                }>
-                    My repository:
-                </Text>
-                <Link
-                    href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
-                    style={styles.link}>
-                    GitHub
-                </Link>
-                <Text textStyle={
-                    styles.text
-                }>
-                    My repository:
-                </Text>
-                <Link
-                    href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
-                    style={styles.link}>
-                    GitHub
-                </Link>
-                <Text textStyle={
-                    styles.text
-                }>
-                    My repository:
-                </Text>
-                <Link href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
-                    style={styles.link}>
-                    GitHub
-                </Link>
-            </List>
-        </Host>
+        <>
+            <Stack.Screen options={{ title: i18n.t("about") }} />
+            <Host style={{ flex: 1 }}>
+                <List>
+                    <ListItem>
+                        <Text textStyle={
+                            styles.text
+                        }>
+                            My repository:
+                        </Text>
+                    </ListItem>
+                    <ListItem>
+                        <Text textStyle={
+                            styles.text
+                        }>
+                            My repository:
+                        </Text>
+                    </ListItem>
+                    <ListItem>
+                        <Link
+                            href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
+                            style={styles.link}>
+                            GitHub
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Text textStyle={
+                            styles.text
+                        }>
+                            My repository:
+                        </Text>
+                    </ListItem>
+                    <ListItem>
+                        <Link
+                            href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
+                            style={styles.link}>
+                            GitHub
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Text textStyle={
+                            styles.text
+                        }>
+                            My repository:
+                        </Text>
+                    </ListItem>
+                    <ListItem>
+                        <Link href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
+                            style={styles.link}>
+                            GitHub
+                        </Link>
+                    </ListItem>
+                </List>
+            </Host>
+        </>
     );
 }
