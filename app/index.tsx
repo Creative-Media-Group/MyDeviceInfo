@@ -1,8 +1,6 @@
 import * as Device from 'expo-device';
-import useStyles from '../styles/mystyles';
-import { useRouter, useTheme } from 'expo-router';
+import { useRouter } from 'expo-router';
 import { Button, Host, List, ListItem, Text } from "@expo/ui"
-import { useState } from 'react';
 
 const DATA = [
   { name: "Manufacturer", value: Device.manufacturer },
