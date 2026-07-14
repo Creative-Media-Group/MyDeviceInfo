@@ -13,34 +13,34 @@ export default function Index() {
     >
       <List>
         <ListItem>
-          <Text textStyle={styles.text}>Manufacturer: {Device.manufacturer}</Text>
+          <Text >Manufacturer: {Device.manufacturer}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Modelname: {Device.modelName}</Text>
+          <Text >Modelname: {Device.modelName}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Brand: {Device.brand}</Text>
+          <Text >Brand: {Device.brand}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>OS Name: {Device.osName}</Text>
+          <Text >OS Name: {Device.osName}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>OS Version: {Device.osVersion}</Text>
+          <Text >OS Version: {Device.osVersion}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Platform API level: {Device.platformApiLevel}</Text>
+          <Text >Platform API level: {Device.platformApiLevel}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Productname: {Device.productName}</Text>
+          <Text >Productname: {Device.productName}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Devicename: {Device.deviceType}</Text>
+          <Text >Devicename: {Device.deviceType}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Supported CPU architectures: {Device.supportedCpuArchitectures}</Text>
+          <Text >Supported CPU architectures: {Device.supportedCpuArchitectures}</Text>
         </ListItem>
         <ListItem>
-          <Text textStyle={styles.text}>Total memory: {Device.totalMemory}</Text>
+          <Text >Total memory: {Device.totalMemory}</Text>
         </ListItem>
         <ListItem>
           <Button label='Details' onPress={() => { router.push('/details') }} />
