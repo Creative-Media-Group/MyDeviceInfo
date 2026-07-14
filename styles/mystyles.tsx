@@ -27,7 +27,7 @@ export default function useStyles() {
             color: "blue"
         },
         text: {
-            color: theme.colors.text
+            color: theme.colors.text.toString()
         }
     })
 }
