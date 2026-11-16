@@ -6,7 +6,8 @@ import useStyles from "../../../styles/mystyles";
 export default function Index() {
     const styles = useStyles();
     const DATA = [
-        { name: "My repository:", linktext: "GitHub", href: "https://github.com/Creative-Media-Group/MyDeviceInfo" }
+        { name: "My repository:", linktext: "GitHub", href: "https://github.com/Creative-Media-Group/MyDeviceInfo" },
+        { name: "Social", linktext: "Mastodon", href: "https://mastodon.online/@tctdiy_gaming" }
     ]
     return (
         <>

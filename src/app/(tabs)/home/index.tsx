@@ -1,4 +1,5 @@
 import { Button, Host, List, ListItem, Text } from "@expo/ui";
+import * as Clipboard from 'expo-clipboard';
 import * as Device from 'expo-device';
 import { Stack } from 'expo-router';
 import { Alert } from 'react-native';
@@ -34,7 +35,7 @@ export default function Index() {
               supportingText={<Text>{item.value?.toString()}</Text>}
               key={item.name}
               onPress={
-                () => { }
+                async () => { await Clipboard.setStringAsync(item.name + ": " + item.value); }
               }
             >
               {item.name}
