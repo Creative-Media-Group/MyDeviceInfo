@@ -1,7 +1,7 @@
-import { i18n } from "../../../utils/mylocalisation";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "expo-router";
 import { NativeTabs } from "expo-router/native-tabs";
 import { useColorScheme } from "react-native";
+import { i18n } from "../../../utils/mylocalisation";
 
 export default function RootLayout() {
   let title = i18n.t("title")

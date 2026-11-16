@@ -1,6 +1,6 @@
 import { Host, List, ListItem, Text } from "@expo/ui";
-import useStyles from "../../../../styles/mystyles";
 import { Link } from "expo-router";
+import useStyles from "../../../../styles/mystyles";
 
 export default function Index() {
     const styles = useStyles();

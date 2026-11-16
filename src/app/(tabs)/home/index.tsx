@@ -1,6 +1,6 @@
+import { Button, Host, List, ListItem, Text } from "@expo/ui";
 import * as Device from 'expo-device';
 import { Stack } from 'expo-router';
-import { Button, Host, List, ListItem, Text } from "@expo/ui"
 import { Alert } from 'react-native';
 import { i18n } from '../../../../utils/mylocalisation';
 

@@ -2,6 +2,7 @@ import { getLocales } from "expo-localization";
 import { I18n } from "i18n-js";
 import de from "../localisation/translations/de.json";
 import en from "../localisation/translations/en.json";
+
 export const deviceLanguage = String(getLocales()?.[0]?.languageCode);
 
 export const i18n = new I18n({
