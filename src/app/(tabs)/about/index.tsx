@@ -4,6 +4,9 @@ import useStyles from "../../../styles/mystyles";
 
 export default function Index() {
     const styles = useStyles();
+    const DATA = [
+        { name: "My repository:", linktext: "GitHub" }
+    ]
     return (
         <>
             <Host style={{ flex: 1 }}>
