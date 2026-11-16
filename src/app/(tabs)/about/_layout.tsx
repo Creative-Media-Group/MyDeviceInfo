@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { i18n } from "../../../../utils/mylocalisation";
+import { i18n } from "../../../localisation/mylocalisation";
 
 export default function RootLayout() {
     return (

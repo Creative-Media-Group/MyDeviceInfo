@@ -2,7 +2,7 @@ import { Button, Host, List, ListItem, Text } from "@expo/ui";
 import * as Device from 'expo-device';
 import { Stack } from 'expo-router';
 import { Alert } from 'react-native';
-import { i18n } from '../../../../utils/mylocalisation';
+import { i18n } from '../../../localisation/mylocalisation';
 
 const DATA = [
   { name: "Manufacturer", value: Device.manufacturer },
@@ -14,7 +14,9 @@ const DATA = [
   { name: "Productname", value: Device.productName },
   { name: "Devicename", value: Device.deviceType },
   { name: "Supported CPU architectures", value: Device.supportedCpuArchitectures },
-  { name: "Total memory", value: Device.totalMemory }
+  { name: "Total memory", value: Device.totalMemory },
+  { name: "Device type", value: Device.deviceType },
+  { name: "OS Build-ID", value: Device.osBuildId }
 ]
 export default function Index() {
   let title = i18n.t("title")
