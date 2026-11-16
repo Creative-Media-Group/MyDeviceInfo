@@ -1,6 +1,6 @@
 import { i18n } from "../../../utils/mylocalisation";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "expo-router";
-import { NativeTabs } from "expo-router/unstable-native-tabs";
+import { NativeTabs } from "expo-router/native-tabs";
 import { useColorScheme } from "react-native";
 
 export default function RootLayout() {
@@ -10,7 +10,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorSheme === "dark" ? DarkTheme : DefaultTheme}>
       <NativeTabs iconColor={"red"} badgeBackgroundColor={"red"}>
-        <NativeTabs.Trigger name="index">
+        <NativeTabs.Trigger name="home">
           <NativeTabs.Trigger.Icon
             sf={"house"} md={"home"}
           />
