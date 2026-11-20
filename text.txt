@@ -1,0 +1,49 @@
+
+//<ListItem>
+//                        <Text textStyle={
+//                            styles.text
+//                        }>
+//                            My repository:
+//                        </Text>
+//                    </ListItem>
+//                    <ListItem>
+//                        <Text textStyle={
+//                            styles.text
+//                        }>
+//                            My repository:
+//                        </Text>
+//                    </ListItem>
+//                    <ListItem>
+//                        <Link
+//                            href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
+//                            style={styles.link}>
+//                            GitHub
+//                        </Link>
+//                    </ListItem>
+//                    <ListItem>
+//                        <Text textStyle={
+//                            styles.text
+//                        }>
+//                            My repository:
+//                        </Text>
+//                    </ListItem>
+//                    <ListItem>
+//                        <Link
+//                            href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
+//                            style={styles.link}>
+//                            GitHub
+//                        </Link>
+//                    </ListItem>
+//                    <ListItem>
+//                        <Text textStyle={
+//                            styles.text
+//                        }>
+//                            My repository:
+//                        </Text>
+//                    </ListItem>
+//                    <ListItem>
+//                        <Link href={"https://github.com/Creative-Media-Group/MyDeviceInfo"}
+//                            style={styles.link}>
+//                            GitHub
+//                        </Link>
+//                    </ListItem>
